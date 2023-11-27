@@ -36,4 +36,39 @@ num       Divisor       quotient       remainder
 4            12            0              4(4)
 
   */
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+string solve(int n,int num)
+{
+    vector<int>v;
+    int r;
+    string res="";
+    while(num>0)
+    {
+        r=num%n;
+        v.push_back(r);
+        num=num/n;
+    }
+    for(int i=v.size()-1;i>=0;i--)
+    {
+        if(v[i]<10)
+            res =res + to_string(v[i]);
+        else
+            res=res+(char)(v[i]-10+65);
+    }
+    return res;
+}
+
+int main() {
+    int n,num;
+    cin>>n;
+    cin>>num;
+    cout<<solve(n, num);
+    return 0;
+}
 
