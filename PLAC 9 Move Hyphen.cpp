@@ -1,3 +1,33 @@
+/*
+
+    Implement the following functions.a
+
+char*MoveHyphen(char str[],int n);
+
+The function accepts a string “str” of length ‘n’, that contains alphabets and hyphens (-). Implement the function to move all hyphens(-) in the string to the front of the given string.
+
+Input Format
+
+A string which contains alphabets and hyphens.
+
+Constraints
+
+Return null if str is null
+
+Output Format
+
+A new string by moving all hyphens into front.
+
+Sample Input 0
+
+Move-Hyphens-to-Front
+Sample Output 0
+
+---MoveHyphenstoFront
+
+    */
+
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
