@@ -1,3 +1,9 @@
+/* Write a program to display the table of a number and print the sum of all the multiples in it.
+
+Input Format
+
+An integer whose top 10 multiples are needed to be summed. */
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
